@@ -3,6 +3,7 @@
 This Python repository implements the K-means clustering algorithm, a powerful unsupervised machine learning technique for grouping data points into distinct clusters. The code includes functions for centroid initialization, iterative assignment of data points to clusters, and centroid updates until convergence. Visualization tools are provided to facilitate understanding and interpretation of the clustering results.
 
 ##Algorithm Description
+'''
 K-means(D, k, ε):    
     1. t = 0
     2. Randomly initialize k centroids: μ₁ᵗ, μ₂ᵗ, ..., μₖᵗ ∈ ℝᵈ
@@ -15,6 +16,8 @@ K-means(D, k, ε):
     9.     foreach i = 1 to k do  // Centroid Update Step
     10.        μᵗᵢ ← (1/|Ci|) ∑ₓⱼ∈Ci xj
     11. until ∑ₖ ||μᵗᵢ - μᵗ₋₁ᵢ||₂² ≤ ε
+
+'''
 
 
 
