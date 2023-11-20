@@ -20,10 +20,6 @@ K-means(D, k, ε)
     10.        μᵗᵢ ← (1/|Ci|) ∑ₓⱼ∈Ci xj
     11. until ∑ₖ ||μᵗᵢ - μᵗ₋₁ᵢ||₂² ≤ ε
 
-
-
-
-
 ## Usage
 The primary functionality lies in the kmeans function:
 
