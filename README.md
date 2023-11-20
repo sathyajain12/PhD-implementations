@@ -4,7 +4,7 @@ This Python repository implements the K-means clustering algorithm, a powerful u
 
 ## Usage
 The primary functionality lies in the kmeans function:
-
+'''
 def kmeans(dset, k=2, tol=1e-4):
     '''
     K-means implementationd for a 
@@ -41,4 +41,4 @@ def kmeans(dset, k=2, tol=1e-4):
     working_dset['centroid'], j_err = centroid_assignation(working_dset, centroids)
     centroids = working_dset.groupby('centroid').agg('mean').reset_index(drop = True)
     return working_dset['centroid'], j_err, centroids
-
+'''
