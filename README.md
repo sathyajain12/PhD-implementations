@@ -4,14 +4,14 @@ This Python repository implements the K-means clustering algorithm, a powerful u
 
 ## Usage
 The primary functionality lies in the kmeans function:
-'''
+
 def kmeans(dset, k=2, tol=1e-4):
-    '''
-    K-means implementationd for a 
-    `dset`:  DataFrame with observations
-    `k`: number of clusters, default k=2
-    `tol`: tolerance=1E-4
-    '''
+    
+    #K-means implementationd for a 
+    #`dset`:  DataFrame with observations
+    #`k`: number of clusters, default k=2
+    #`tol`: tolerance=1E-4
+    
     # Let us work in a copy, so we don't mess the original
     working_dset = dset.copy()
     # We define some variables to hold the error, the 
@@ -41,4 +41,4 @@ def kmeans(dset, k=2, tol=1e-4):
     working_dset['centroid'], j_err = centroid_assignation(working_dset, centroids)
     centroids = working_dset.groupby('centroid').agg('mean').reset_index(drop = True)
     return working_dset['centroid'], j_err, centroids
-'''
+
